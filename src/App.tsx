@@ -105,14 +105,18 @@ function App() {
                     <p className='text-[#c3c3c3] mt-8 w-full max-[500px]:w-full'>
                       {project.description}
                     </p>
-                    <h2 className='text-white text-l mb-5'>Tecnologias Utilizadas</h2>
-                    <div className='flex items-center justify-center gap-5'>
+                    <h2 className='text-white text-l mb-5 max-[500px]:mt-4'>Tecnologias Utilizadas</h2>
+                    <div className='flex items-center justify-center gap-5 flex-wrap'>
                       {project.technologies.map((tech, index) => (
                         <div key={index} className="flex flex-col items-center">
                           <img src={tech.icon} alt={tech.name} className='w-10 h-10' />
                           <span className="text-xs text-white mt-1">{tech.name}</span>
                         </div>
                       ))}
+                      <div className='flex items-center justify-center gap-2 flex-col'>
+                        <img src={imgGitHub} alt="Repo" className='w-10 h-10' />
+                        <a href={project.url_repo} target="_blank" rel="noopener noreferrer" className='text-[#40C8F1] text-xs font-bold'>Ver Repo</a>
+                      </div>
                     </div>
                   </div>
                 </div>

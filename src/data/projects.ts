@@ -58,6 +58,7 @@ export interface Project {
     icon: string;
   }[];
   images: string[];
+  url_repo: string;
 }
 
 export const projects: Project[] = [
@@ -73,7 +74,8 @@ export const projects: Project[] = [
       { name: "Firebase", icon: imgFirebase },
       { name: "TypeScript", icon: imgTypescript }
     ],
-    images: [img1, img2, img3, img4, img5]
+    images: [img1, img2, img3, img4, img5],
+    url_repo: "https://github.com/SanAJC/App_Gestion_Proyectos"
   },
   {
     id: 2,
@@ -87,7 +89,8 @@ export const projects: Project[] = [
       { name: "HTML5", icon: imgHtml },
       { name: "CSS", icon: imgCss }
     ],
-    images: [img23, img24, img25, img26, img27]
+    images: [img23, img24, img25, img26, img27],
+    url_repo: "https://github.com/SanAJC/Tienda_Zapas"
   },
   {
     id: 3,
@@ -102,7 +105,8 @@ export const projects: Project[] = [
       { name: "TypeScript", icon: imgTypescript },
       { name: "Tailwind CSS", icon: imgTailwind }
     ],
-    images: [img15, img16, img17, img18, img19,img20,img21,img22]
+    images: [img15, img16, img17, img18, img19,img20,img21,img22],
+    url_repo: "https://github.com/SanAJC/Herramienta_Analisis_Datos"
   },
   {
     id: 4,
@@ -117,7 +121,8 @@ export const projects: Project[] = [
       { name: "PostgreSQL", icon: imgPostgres },
       
     ],
-    images: [imgRedSocial,]
+    images: [imgRedSocial,],
+    url_repo: "https://github.com/SanAJC/Red_Social_Microservicios"
   },
   {
     id: 5,
@@ -131,7 +136,8 @@ export const projects: Project[] = [
       { name: "PostgreSQL", icon: imgPostgres },
       { name: "JavaScript", icon: imgJavaScript }
     ],
-    images: [img10, img11, img12, img13, img14]
+    images: [img10, img11, img12, img13, img14],
+    url_repo: "https://github.com/SanAJC/Sis_Gestor_Citas_Profesionales"
   },
   {
     id: 6,
@@ -148,6 +154,7 @@ export const projects: Project[] = [
       
 
     ],
-    images: [img6, img7, img8, img9]
+    images: [img6, img7, img8, img9],
+    url_repo: "https://github.com/SanAJC/Sys_Gestion_Inventario"
   }
 ];
