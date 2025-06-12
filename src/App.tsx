@@ -62,7 +62,7 @@ function App() {
               eficientes para determinados proyectos siendo lider, gestor y desarrollador fullstack dentro de mi campo.  
             </p>
             <div className='flex flex-col sm:flex-row items-center justify-center md:justify-start gap-5 mt-10'>
-              <button className='w-full sm:w-auto bg-[#40C8F1] text-white px-8 py-3 rounded-xl transition-all hover:transform hover:translate-y-[-5px] hover:bg-transparent hover:text-[#40C8F1] hover:border-solid hover:border-[#40C8F1] hover:border-[2px]'>Descargar CV</button>
+              <button className='w-full sm:w-auto bg-[#40C8F1] text-white px-8 py-3 rounded-xl transition-all hover:transform hover:translate-y-[-5px] hover:bg-transparent hover:text-[#40C8F1] hover:border-solid hover:border-[#40C8F1] hover:border-[2px]'> <a href="/docs/cv_prueba.pdf" download="cv_prueba.pdf">Descargar CV</a></button>
               <button onClick={handleEmailClick} className='w-full sm:w-auto bg-black text-white px-8 py-3 rounded-xl transition-all hover:transform hover:translate-y-[-5px] hover:bg-white hover:text-black hover:border-solid hover:border-black hover:border-[2px] mt-4 sm:mt-0'>Contactame</button>
             </div>
             <div className='flex flex-col sm:flex-row items-center gap-5 mt-10'>
