@@ -87,22 +87,24 @@ function App() {
             {projects.map((project) => (
               <CarouselItem key={project.id}>
                 <div className='w-full min-h-[70vh] flex flex-col md:flex-row items-center justify-center gap-8 px-4 py-6'>
-                  <Carousel className="w-full max-w-[300px] sm:max-w-[300px] md:max-w-[350px]">
+                  <Carousel className="w-full max-w-[340px] sm:max-w-[420px] md:max-w-[520px]">
                     <CarouselContent>
                       {project.images.map((image, imageIndex) => (
                         <CarouselItem key={imageIndex}>
                           <div className="p-1">
-                            <Card>
-                              <CardContent className="flex aspect-square items-center justify-center p-6">
-                                <img src={image} alt={`Imagen ${imageIndex + 1} del proyecto ${project.title}`} className="object-contain w-full h-full rounded-md" />
+                            <Card className="py-0">
+                              <CardContent className="px-0 py-0">
+                                <div className="relative w-full aspect-[16/9] overflow-hidden rounded-xl">
+                                  <img src={image} alt={`Imagen ${imageIndex + 1} del proyecto ${project.title}`} className="absolute inset-0 h-full w-full object-contain" />
+                                </div>
                               </CardContent>
                             </Card>
                           </div>
                         </CarouselItem>
                       ))}
                     </CarouselContent>
-                    <CarouselPrevious className='max-[500px]:absolute max-[500px]:left-0 max-[500px]:size-10'/>
-                    <CarouselNext className='max-[500px]:absolute max-[500px]:right-0 max-[500px]:size-10'/>
+                    <CarouselPrevious className='max-[500px]:absolute max-[500px]:left-0 max-[500px]:size-10 md:left-3'/>
+                    <CarouselNext className='max-[500px]:absolute max-[500px]:right-0 max-[500px]:size-10 md:right-3'/>
                   </Carousel>
                   <div className='w-[50%] h-full flex items-center justify-center flex-col ml-20 max-[500px]:ml-0'>
                     <h1 className='text-2xl text-white font-bold max-[500px]:text-l'>{project.title}</h1>
@@ -172,7 +174,7 @@ function App() {
                 <img src={imgLocation} alt="imgLocation" className='w-10 h-10' />
                 <div>
                   <h2 className='text-white text-xl'>Ubicacion</h2>
-                  <p className='text-[#c3c3c3]'>Santa Marta, Colombia</p>
+                  <p className='text-[#c3c3c3]'>Bucaramanga, Colombia</p>
                 </div>
               </div>
 
@@ -209,14 +211,16 @@ function App() {
           <img src={imgDocker} alt="" className='w-10 h-10'/>
         </div>
         <div className='w-full h-[90%] flex items-center justify-center gap-3 mt-10'>
-          <Carousel className="w-full max-w-[400px]">
+          <Carousel className="w-full max-w-[520px]">
             <CarouselContent>
               {certificates.map((certificate, index) => (
                 <CarouselItem key={index}>
                   <div className="p-1">
-                    <Card>
-                      <CardContent className="flex aspect-square items-center justify-center p-6">
-                        <img src={certificate.images[0]} alt="" className="object-contain w-full h-full rounded-md"/>
+                    <Card className="py-0">
+                      <CardContent className="px-0 py-0">
+                        <div className="relative w-full aspect-[16/9] overflow-hidden rounded-xl">
+                          <img src={certificate.images[0]} alt="" className="absolute inset-0 h-full w-full object-contain"/>
+                        </div>
                       </CardContent>
                     </Card>
                   </div>
