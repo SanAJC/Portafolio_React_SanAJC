@@ -4,6 +4,7 @@ import imgC3 from '../assets/Certificado Python.jpg';
 import imgC4 from '../assets/Certificado Delfin.jpg';
 import imgC5 from '../assets/Certificado-Java.jpg';
 import imgC6 from '../assets/Certificado CSS.jpg';
+import imgC7 from '../assets/Certificado Docker.jpg';
 
 
 export interface Certificate {
@@ -35,5 +36,9 @@ export const certificates: Certificate[] = [
   {
     id: 6,
     images: [imgC6]
+  },
+  {
+    id: 7,
+    images: [imgC7]
   }
 ];

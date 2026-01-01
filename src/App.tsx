@@ -71,7 +71,7 @@ function App() {
                 <a href="https://github.com/SantiagoJaimesC" target="_blank" rel="noopener noreferrer">
                   <img src={imgGitHub} className="w-8 h-8" alt="GitHub" />
                 </a>
-                <a href="https://linkedin.com/in/santiago-jaimes-c" target="_blank" rel="noopener noreferrer">
+                <a href="https://www.linkedin.com/in/santiago-jaimes-dev" target="_blank" rel="noopener noreferrer">
                   <img src={imgLinkedin} className="w-8 h-8" alt="Linkedin" />
                 </a>
               </div>
