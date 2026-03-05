@@ -16,6 +16,9 @@ import imgRedSocial from '../assets/redsocial.png';
 import imgJavaScript from '../assets/javascript.svg';
 import imgAzure from '../assets/azure.svg';
 import imgRedis from '../assets/redis.svg';
+import imgSpringBoot from '../assets/spring.svg';
+import imgJava from '../assets/java.svg';
+import imgFastAPI from '../assets/fastapi.svg';
 
 import img1 from '../assets/1.jpg';
 import img2 from '../assets/2.jpg';
@@ -67,6 +70,30 @@ import img41 from '../assets/41.jpeg';
 import img42 from '../assets/42.jpeg';
 import img43 from '../assets/43.jpeg';
 
+import img44 from '../assets/r1.jpeg';
+import img45 from '../assets/r2.jpeg';
+import img46 from '../assets/r3.jpeg';
+import img47 from '../assets/r4.jpeg';
+import img48 from '../assets/r5.jpeg';
+import img49 from '../assets/r6.jpeg';
+import img50 from '../assets/r7.jpeg';
+import img51 from '../assets/r8.jpeg';
+import img52 from '../assets/r9.jpeg';
+import img53 from '../assets/r10.jpeg';
+import img54 from '../assets/r11.jpeg';
+import img55 from '../assets/r12.jpeg';
+import img56 from '../assets/r13.jpeg';
+import img57 from '../assets/r14.jpeg';
+import img58 from '../assets/r15.jpeg';
+import img59 from '../assets/r16.jpeg';
+
+import img60 from '../assets/r17.jpeg';
+import img61 from '../assets/r18.jpeg';
+import img62 from '../assets/r19.jpeg';
+import img63 from '../assets/r20.jpeg';
+import img64 from '../assets/r21.jpeg';
+
+
 
 export interface Project {
   id: number;
@@ -100,6 +127,21 @@ export const projects: Project[] = [
   },
   {
     id: 2,
+    title: "RentaSmart App Web para gestion de alquileres",
+    role: "Desarrollador Frontend",
+    description: "RentaSmart es una plataforma web completa para la gestión de arrendamientos inmobiliarios, diseñada para conectar arrendadores, arrendatarios y prestadores de servicios en un ecosistema digital integral.",
+    technologies: [
+      { name: "React", icon: imgReact },
+      { name: "TypeScript", icon: imgTypescript },
+      { name: "Spring Boot", icon: imgSpringBoot },
+      { name: "Java", icon: imgJava },
+      { name: "PostgreSQL", icon: imgPostgres },
+    ],
+    images: [img44, img45, img46, img47, img48, img49, img50, img51, img52, img53, img54, img55, img56, img57, img58, img59],
+    url_repo: "https://github.com/SanAJC/RentaSmart"
+  },
+  {
+    id: 3,
     title: "App web para la gestión de procesos en el Hotel Kamila",
     role: "Desarrollador Full Stack",
     description: "Aplicación web para la gestión de procesos en el Hotel Kamila. En conjunto con su lading page",
@@ -114,7 +156,7 @@ export const projects: Project[] = [
     url_repo: "https://github.com/SanAJC/App_Hotel_Kamila"
   },
   {
-    id: 3,
+    id: 4,
     title: "Aplicación web para la gestión de proyectos",
     role: "Desarrollador Backend",
     description: "Aplicación web para la gestión integral de proyectos, permitiendo a los usuarios crear, editar y supervisar proyectos de manera eficiente. Incorporando estadisticas del seguimientos de los proyectos y tareas integrado con github.",
@@ -129,7 +171,7 @@ export const projects: Project[] = [
     url_repo: "https://github.com/SanAJC/App_Gestion_Proyectos"
   },
   {
-    id: 4,
+    id: 5,
     title: "E-commerce de Productos de Zapatillas",
     role: "Desarrollador Full Stack",
     description: "Tienda Zapas es una aplicación web para la gestión de una tienda de zapatos, desarrollada con Django. Permite a los usuarios ver, buscar y comprar productos, así como gestionar el inventario y los pedidos.",
@@ -144,7 +186,7 @@ export const projects: Project[] = [
     url_repo: "https://github.com/SanAJC/Tienda_Zapas"
   },
   {
-    id: 5,
+    id: 6,
     title: "Plataforma Analisis de Datos",
     role: "Desarrollador Backend",
     description: "Herramienta para el análisis y visualización de grandes volúmenes de datos con generación de gráficos interactivos y reportes personalizados. Desarrollé algoritmos de procesamiento de datos.",
@@ -160,7 +202,7 @@ export const projects: Project[] = [
     url_repo: "https://github.com/SanAJC/Herramienta_Analisis_Datos"
   },
   {
-    id: 6,
+    id: 7,
     title: "Red Social en Microservicios",
     role: "Desarrollador Backend",
     description: "Aplicación de red social desarrollada con una arquitectura de microservicios, facilitando la escalabilidad, mantenibilidad y despliegue independiente de cada componente.",
@@ -176,7 +218,7 @@ export const projects: Project[] = [
     url_repo: "https://github.com/SanAJC/Red_Social_Microservicios"
   },
   {
-    id: 7,
+    id: 8,
     title: "Sistema Gestor de Citas",
     role: "Desarrollador Backend",
     description: "Aplicación web para la gestión de citas profesionales, diseñada para facilitar la programación y administración de citas entre profesionales y clientes. Recordatorios en Google Calendar integrado para los usuarios con citas programadas.",
@@ -191,7 +233,7 @@ export const projects: Project[] = [
     url_repo: "https://github.com/SanAJC/Sis_Gestor_Citas_Profesionales"
   },
   {
-    id: 8,
+    id: 9,
     title: "App de Gestion de Inventario",
     role: "Desarrollador Full Stack",
     description: "Aplicación web para la gestión integral de inventarios, permitiendo a los usuarios administrar productos, clientes y ventas de manera eficiente a través del panel de administración de Django.",
@@ -207,5 +249,20 @@ export const projects: Project[] = [
     ],
     images: [img6, img7, img8, img9],
     url_repo: "https://github.com/SanAJC/Sys_Gestion_Inventario"
-  }
+  },
+  {
+    id: 10,
+    title: " SMS CMS - Sistema de Gestión de Mensajes",
+      role: "Desarrollador Backend",
+      description: "Sistema completo para gestión de contactos y envío de mensajes SMS con interfaz web moderna.",
+    technologies: [
+      { name: "FastAPI", icon: imgFastAPI },
+      { name: "Python", icon: imgPython },
+      { name: "PostgreSQL", icon: imgPostgres },
+      { name: "React", icon: imgReact },
+    
+    ],
+    images: [img60, img61, img62, img63, img64],
+    url_repo: "https://github.com/SanAJC/SMS_CMS"
+  },
 ];
